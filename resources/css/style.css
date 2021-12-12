@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Readex Pro", "Sans serif";
+    background-color: rgb(253, 239, 219);
+    color: #333333;
+}
+
+/* Header*/
+header {
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    color: blanchedalmond;
+    z-index: 5;
+}
+
+header h1 {
+float: left;
+padding-top: -10px;
+padding-left: 200px;
+}
+
+header .navigation {
+    float: right;
+    padding-top: 15px;
+    padding-right: 200px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0% 10px;
+    font-size: 1.1rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+#about {
+    position: relative;
+    top: 80px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0px 200px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+
+#about .aboutMe {
+    margin: auto;
+    width: 60%;
+     
+}
+
+#about .image {
+    margin: auto;
+    width: 35%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+#about img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    border-radius: 10px;
+}
+
+.latest-projects {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.latest-projects .container {
+    display: flex;
+    justify-items: start;
+    width: auto;
+    margin: 0 auto;
+
+}
+  
+.latest-projects .col {
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 5px;
+}
+  
+.latest-projects img {
+    height: 100px;
+    display: none;
+}
+.latest-projects h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+.latest-projects .summary {
+    height: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.latest-projects .tech {
+    height: 50px;
+}
+  
+.latest-projects .col a {
+    background-color: white;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 0;
+    border: 2px solid #333333; 
+}
+
+@media only screen and (max-width: 800px) {
+    #about {
+      padding: 20px;
+    }
+  }
