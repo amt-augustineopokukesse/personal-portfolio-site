@@ -39,7 +39,7 @@
       </div>
     </div>
     <!--Latest Projects section-->
-    <section class="latest-projects">
+    <div class="latest-projects">
       <h2>Latest Projects</h2>
         <div class="container">
           
@@ -60,14 +60,35 @@
           </div>
           
           <div class="col">
-            <img src="./resources/images/davies-burgers.png" alt="">
-            <h3>Davie's Burgers</h3>
+            <div id="image22" style="display:block;">
+              <img src="./resources/images/davies-burgers.png" alt="">
+            </div>
+            <h3 id="project-name">Davie's Burgers</h3>
             <p class="summary">Summary: This project uses CSS box model properties to fix a fictional restaurant’s website.</p>
             <p class="tech">Technologies used: HTML, CSS, GIT</p>
             <a href="#"> Visit site</a><br>
           </div>
           
         </div>
-      </section>
+      </div>
+      <footer>
+        <p>&copy; Augustine Opoku-Kesse 2021</p>
+      </footer>
 </body>
+<script>
+  const toggleHiddenElement = (domElement) => {
+    if (domElement.style.display === 'none') {
+      domElement.style.display = 'block';
+    } else {
+      domElement.style.display = 'none';
+    }
+  }
+
+  let headerId = document.getElementById("project-name");
+  let imageId = document.getElementById('image22');
+
+  headerId.addEventListener('mouseover', () => {
+    toggleHiddenElement(imageId);
+  })
+</script>
 </html>
