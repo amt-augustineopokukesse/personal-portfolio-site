@@ -90,23 +90,35 @@ header .navigation {
   
 .latest-projects .col {
     text-align: center;
-    display: inline-block;
+    display: flex;
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 5px;
-}
-  
-.latest-projects img {
-    height: 100px;
-}
-.latest-projects h3 {
-    font-weight: 600;
-    text-transform: uppercase;
     cursor: pointer;
 }
   
+
+.latest-projects .col h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.6;
+    
+}
+
+
+#site-info {
+    display: none;
+}
+
 .latest-projects .summary {
     height: 100px;
     font-weight: 400;
@@ -119,6 +131,7 @@ header .navigation {
 .latest-projects .tech {
     height: 50px;
 }
+
   
 .latest-projects .col a {
     background-color: white;

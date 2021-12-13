@@ -43,30 +43,31 @@
       <h2>Latest Projects</h2>
         <div class="container">
           
-          <div class="col">
-            <img src="./resources/images/tsunami-coffee.png" alt="">
-            <h3>Tsunami Coffee</h3>
-            <p class="summary">Summary: This project uses knowledge of relative units and responsive web design to help Tsunami Coffee make their website come to life.</p>
-            <p  class="tech">Technologies used: HTML, CSS, GIT</p>
-            <a href="#"> Visit site</a><br>
-          </div>
-          
-          <div class="col">
-            <img src="./resources/images/fotomatic.png" alt="">
-            <h3>Fotomatic</h3>
-            <p class="summary">Summary: This project uses knowledge of HTML and CSS to fix a broken version of a responsive website called Fotomatic.</p>
-            <p class="tech">Technologies used: HTML, CSS, GIT</p>
-            <a href="#"> Visit site</a><br>
-          </div>
-          
-          <div class="col">
-            <div id="image22" style="display:block;">
-              <img src="./resources/images/davies-burgers.png" alt="">
+          <div class="col" id="tCoffee-site" style="background-image: url(https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png)">
+            <h3 id="tcproject-name">Tsunami Coffee</h3>
+            <div id="tcsite-info" style="display: none">
+              <p class="summary">Summary: This project uses knowledge of relative units and responsive web design to help Tsunami Coffee make their website come to life.</p>
+              <p  class="tech">Technologies used: HTML, CSS, GIT</p>
+              <a href="#"> Visit site</a><br>
             </div>
-            <h3 id="project-name">Davie's Burgers</h3>
-            <p class="summary">Summary: This project uses CSS box model properties to fix a fictional restaurant’s website.</p>
-            <p class="tech">Technologies used: HTML, CSS, GIT</p>
-            <a href="#"> Visit site</a><br>
+          </div>
+          
+          <div class="col" id="foto-site" style="background-image: url(./resources/images/banner-landingpage.jpg)">
+            <h3 id="fproject-name">Fotomatic</h3>
+            <div id="fsite-info" style="display: none">
+              <p class="summary">Summary: This project uses knowledge of HTML and CSS to fix a broken version of a responsive website called Fotomatic.</p>
+              <p class="tech">Technologies used: HTML, CSS, GIT</p>
+              <a href="#"> Visit site</a><br>
+            </div>
+          </div>
+          
+          <div class="col" id="burger-site" style="background-image: url(https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg)">
+            <h3 id="dbproject-name">Davie's Burgers</h3>
+            <div id="dbsite-info" style="display: none">
+              <p class="summary">Summary: This project uses CSS box model properties to fix a fictional restaurant’s website.</p>
+              <p class="tech">Technologies used: HTML, CSS, GIT</p>
+              <a href="#"> Visit site</a><br>
+            </div>
           </div>
           
         </div>
@@ -75,20 +76,5 @@
         <p>&copy; Augustine Opoku-Kesse 2021</p>
       </footer>
 </body>
-<script>
-  const toggleHiddenElement = (domElement) => {
-    if (domElement.style.display === 'none') {
-      domElement.style.display = 'block';
-    } else {
-      domElement.style.display = 'none';
-    }
-  }
-
-  let headerId = document.getElementById("project-name");
-  let imageId = document.getElementById('image22');
-
-  headerId.addEventListener('mouseover', () => {
-    toggleHiddenElement(imageId);
-  })
-</script>
+<script src="./script.js"></script>
 </html>
