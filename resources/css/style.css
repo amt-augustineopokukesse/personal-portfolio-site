@@ -1,3 +1,6 @@
+html {
+    margin: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -73,14 +76,14 @@ header .navigation {
     border-radius: 10px;
 }
 
-.latest-projects {
+#latest-projects {
     padding-top: 80px;
     padding-bottom: 100px;
     padding-left: 200px;
     padding-right: 200px;
 }
 
-.latest-projects .container {
+#latest-projects .container {
     display: flex;
     justify-items: start;
     width: auto;
@@ -88,12 +91,12 @@ header .navigation {
 
 }
   
-.latest-projects .col {
+#latest-projects .col {
     text-align: center;
     display: flex;
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +105,7 @@ header .navigation {
 }
   
 
-.latest-projects .col h3 {
+#latest-projects .col h3 {
     font-weight: 600;
     text-transform: uppercase;
     background-color: white;
@@ -119,21 +122,28 @@ header .navigation {
     display: none;
 }
 
-.latest-projects .summary {
+#latest-projects .summary {
     height: 100px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 20px;
-    padding: 0 20px;
+    padding: 10px 20px;
     margin-bottom: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
 }
 
-.latest-projects .tech {
-    height: 50px;
+#latest-projects .tech {
+    height: 30px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
 }
 
   
-.latest-projects .col a {
+#latest-projects .col a {
     background-color: white;
     color: #333333;
     font-family: 'Raleway', sans-serif;
@@ -143,21 +153,35 @@ header .navigation {
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
-    margin-bottom: 0;
+    margin-top: 20px;
     border: 2px solid #333333; 
 }
 
 footer {
     background-color: #333333;
     color: rgb(253, 239, 219);
+    padding: 0.1rem 2rem;
+    
 }
 
 footer p {
     text-align: center;
+    /*padding: 10px;*/
 }
 
 @media only screen and (max-width: 800px) {
     #about {
       padding: 20px;
+    }
+
+    #latest-projects {
+        padding-top: 80px;
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #latest-projects .col {
+        flex-wrap: wrap;
     }
   }
