@@ -42,6 +42,7 @@ header .navigation {
     color: blanchedalmond;
 }
 
+/* About */
 #about {
     position: relative;
     top: 80px;
@@ -76,6 +77,7 @@ header .navigation {
     border-radius: 10px;
 }
 
+/* Latest projects*/
 #latest-projects {
     padding-top: 80px;
     padding-bottom: 100px;
@@ -152,6 +154,7 @@ header .navigation {
     border: 2px solid #333333; 
 }
 
+/* Footer*/
 footer {
     background-color: #333333;
     color: rgb(253, 239, 219);
@@ -184,7 +187,7 @@ footer p {
     }
   }
 
-@media only screen and (max-width: 1038px) {
+@media only screen and (max-width: 1050px) {
     .header {
         display: flex;
         flex-direction: column;
